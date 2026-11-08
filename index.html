@@ -1,0 +1,42 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#151f33"><meta name="description" content="Explore inspiring beaches, temples and countries with the WanderWise travel recommendation website."><title>Curated Travel Discoveries | WanderWise</title><link rel="preconnect" href="https://images.unsplash.com"><link rel="stylesheet" href="style.css"><script defer src="app.js"></script></head><body data-page="home"><a class="skip" href="#main">Skip to main content</a>
+<header class="header">
+<div class="wrap header-inner">
+<a class="logo" href="index.html" aria-label="WanderWise Home"><span class="logo-mark" aria-hidden="true">◈</span><span>Wander<span class="logo-bright">Wise</span><small>TRAVEL STORIES</small></span></a>
+<button class="menu-button" type="button" id="mobile-menu" aria-expanded="false" aria-controls="nav-items" aria-label="Open or close navigation"><span></span><span></span><span></span></button>
+<nav class="nav-items" id="nav-items" aria-label="Main navigation">
+<a href="index.html" class="selected" aria-current="page">Home</a>
+<a href="about.html" class="" >About Us</a>
+<a href="contact.html" class="" >Contact Us</a>
+</nav>
+<form class="search-bar" action="index.html" method="get" id="search-form" role="search">
+<label class="sr-only" for="search-box">Search recommendations</label>
+<span class="search-symbol" aria-hidden="true">⌕</span>
+<input id="search-box" name="q" type="search" placeholder="Search beach, temple, country..." aria-label="Search destinations" maxlength="80" required>
+<button class="button button-search" type="submit">Search</button>
+<button class="button button-clear" type="button" id="clear-btn">Clear</button>
+</form></div>
+</header>
+<main id="main">
+<section class="hero"><div class="wrap hero-grid">
+<div class="hero-copy"><div class="eyebrow"><span class="eyebrow-dot"></span> A DIFFERENT WAY TO SEE THE WORLD</div>
+<h1>Where will<br>your <span>story</span><br>take you?</h1>
+<p class="hero-lead">Beyond the ordinary and across the map. Discover remarkable beaches, ancient temples, and countries just waiting to surprise you.</p>
+<div class="hero-actions"><button class="button action-main" type="button" id="start-exploring">Explore places <span>↗</span></button><a class="action-secondary" href="about.html">Meet WanderWise <span>↗</span></a></div>
+<div class="hero-stat"><span class="stat-orbit">✳</span><div><strong>Your world, your way.</strong><small>Thoughtful recommendations for curious minds.</small></div></div></div>
+<div class="hero-art"><div class="main-photo"><img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Beautiful sandy beach beside clear blue ocean"><span class="photo-label">SOMEWHERE BEAUTIFUL / 001</span></div>
+<div class="side-photo"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&amp;fit=crop&amp;w=460&amp;q=82" alt="Historic architecture in Kyoto Japan"></div><div class="round-stamp">GO<br><strong>EXPLORE</strong><span>↗</span></div><div class="hero-number">01 — 03 <span>IDEAS FOR EVERY EXPLORER</span></div></div>
+</div></section>
+<section class="ticker" aria-label="Travel inspiration"><div class="wrap ticker-inner"><span>BEACH ESCAPES</span><b>✳</b><span>TIMELESS TEMPLES</span><b>✳</b><span>NEW COUNTRIES</span><b>✳</b><span>YOUR NEXT STORY</span></div></section>
+<section class="discover section" id="discover" aria-labelledby="discover-title"><div class="wrap">
+<div class="section-title-row"><div><div class="overline">01 / PICK A DIRECTION</div><h2 id="discover-title">Discover your <em>kind</em> of adventure.</h2></div><p>There is no one perfect way to travel. What calls to you today? Choose an experience or use the search bar above.</p></div>
+<div class="quick-picks" aria-label="Search by travel category"><button type="button" data-term="beach"><span>01</span><strong>Beaches</strong><span>Sun, sea &amp; slow days ↗</span></button><button type="button" data-term="temple"><span>02</span><strong>Temples</strong><span>History, culture &amp; wonder ↗</span></button><button type="button" data-term="country"><span>03</span><strong>Countries</strong><span>New streets &amp; perspectives ↗</span></button></div>
+<section class="results" id="results" aria-labelledby="results-heading" aria-live="polite" hidden><div class="results-header"><div><div class="overline">CURATED DESTINATIONS</div><h3 id="results-heading">Places worth exploring.</h3></div><span id="result-count" class="result-count"></span></div><div id="result-grid" class="result-grid"></div><div id="no-results" class="no-results" hidden><span>⌕</span><h3>Nothing found on this route.</h3><p>Try the keywords <strong>beach</strong>, <strong>temple</strong>, or <strong>country</strong>.</p><button type="button" data-term="beach" class="button action-main">See beach escapes ↗</button></div></section>
+<section class="preview" id="preview"><div class="preview-head"><h3>Three paths. Endless memories.</h3><span>START HERE <span aria-hidden="true">↘</span></span></div><div class="preview-grid">
+<button type="button" data-term="beach" class="preview-tile"><img loading="lazy" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=800&amp;q=82" alt="Tropical white sand beach"><span class="tile-shade"></span><span class="tile-top">THE COAST</span><span class="tile-bottom"><strong>Out of office.</strong><small>Discover beaches <span aria-hidden="true">↗</span></small></span></button>
+<button type="button" data-term="temple" class="preview-tile"><img loading="lazy" src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&amp;fit=crop&amp;w=800&amp;q=82" alt="Traditional Japanese temple entrance"><span class="tile-shade"></span><span class="tile-top">THE CULTURE</span><span class="tile-bottom"><strong>Stay curious.</strong><small>Discover temples <span aria-hidden="true">↗</span></small></span></button>
+<button type="button" data-term="country" class="preview-tile"><img loading="lazy" src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&amp;fit=crop&amp;w=800&amp;q=82" alt="Mediterranean coastal town at sunset"><span class="tile-shade"></span><span class="tile-top">THE WORLD</span><span class="tile-bottom"><strong>Go a little further.</strong><small>Discover countries <span aria-hidden="true">↗</span></small></span></button>
+</div></section>
+</div></section>
+<section class="quote-band"><div class="wrap quote-inner"><span>✳</span><p>“The world is a book, and the best part is turning the page.”</p><a href="contact.html" class="button pale-button">Share your story ↗</a></div></section>
+<section class="bottom-cta"><div class="wrap bottom-cta-grid"><div><div class="overline">KEEP WONDERING</div><h2>There’s always<br><em>somewhere new.</em></h2></div><p>Your next destination is one search away. Follow the curiosity, not the crowds.</p><a href="#discover" class="button action-main">Find your next stop ↗</a></div></section>
+</main><footer class="footer"><div class="wrap"><div class="footer-main"><div><a class="footer-logo" href="index.html">◈ Wander<span>Wise</span></a><p>Good places. Great stories. Adventures worth sharing.</p></div><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></div></div><div class="footer-bottom"><span>© 2026 WanderWise. Crafted for curious travelers.</span><span>Explore beyond the expected ↗</span></div></div></footer></body></html>
